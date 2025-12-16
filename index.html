@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Cloud Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 4rem 10%;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.8rem;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    nav {
+      background: #020617;
+      padding: 1rem 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 4.5rem 10%;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: #0f172a;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .about p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .box {
+      background: #ffffff;
+      padding: 1.8rem;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+    }
+
+    .box h3 {
+      margin-bottom: 0.6rem;
+      color: #0f172a;
+    }
+
+    .box p {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0284c7;
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      margin-top: 0.8rem;
+    }
+
+    .contact {
+      background: #0f172a;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 4rem 10%;
+    }
+
+    .contact h2 {
+      color: #38bdf8;
+    }
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .about {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <strong style="color:#38bdf8">AWS Cloud</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <div>
+        <h1>Cloud Engineer <span>Specialized in AWS</span></h1>
+        <p>I design, deploy, and manage scalable, secure, and cost‑efficient cloud infrastructures using Amazon Web Services.</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+      <div>
+        <p style="font-size:0.95rem;opacity:0.8">
+          Core Focus Areas:<br><br>
+          ✔ Cloud Architecture<br>
+          ✔ DevOps & Automation<br>
+          ✔ Security Best Practices<br>
+          ✔ High Availability Systems
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>
+        I am an AWS-focused cloud engineer with strong practical knowledge of compute, networking, storage, and security services.
+        I enjoy building real-world cloud projects and optimizing infrastructure for performance and cost.
+      </p>
+      <p>
+        My goal is to work on production-level cloud environments, contribute to DevOps workflows, and continuously improve system reliability using AWS native tools.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>AWS & Cloud Skills</h2>
+    <div class="grid">
+      <div class="box"><h3>Compute</h3><p>EC2, Auto Scaling, Load Balancer</p><span class="tag">Compute</span></div>
+      <div class="box"><h3>Storage</h3><p>S3, EBS, Glacier, Backup</p><span class="tag">Storage</span></div>
+      <div class="box"><h3>Networking</h3><p>VPC, Subnets, Route 53, NAT</p><span class="tag">Network</span></div>
+      <div class="box"><h3>Security</h3><p>IAM, KMS, Security Groups</p><span class="tag">Security</span></div>
+      <div class="box"><h3>Databases</h3><p>RDS, DynamoDB</p><span class="tag">Database</span></div>
+      <div class="box"><h3>DevOps</h3><p>CI/CD, CodePipeline, Git</p><span class="tag">DevOps</span></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Cloud Projects</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Static Website on AWS</h3>
+        <p>Deployed a secure static website using S3, CloudFront, and Route 53.</p>
+        <span class="tag">S3 + CDN</span>
+      </div>
+      <div class="box">
+        <h3>Highly Available App</h3>
+        <p>Designed EC2 infrastructure with ALB, Auto Scaling, and Multi‑AZ setup.</p>
+        <span class="tag">High Availability</span>
+      </div>
+      <div class="box">
+        <h3>Serverless Backend</h3>
+        <p>Built REST API using Lambda, API Gateway, and DynamoDB.</p>
+        <span class="tag">Serverless</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <a href="mailto:yourname@email.com" class="btn">Get in Touch</a>
+  </section>
+
+  <footer>
+    © 2025 AWS Cloud Portfolio | Built with HTML & CSS
+  </footer>
+
+</body>
+</html>
